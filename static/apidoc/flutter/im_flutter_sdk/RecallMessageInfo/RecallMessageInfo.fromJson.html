@@ -68,13 +68,13 @@
     recallMessageId: map[&#39;recallMsgId&#39;],
     recallBy: map[&#39;recallBy&#39;],
     conversationId: map[&#39;convId&#39;],
-    recallMessage: map.getValue&lt;EMMessage&gt;(
+    recallMessage: map.getValue&lt;ChatMessage&gt;(
       &quot;msg&quot;,
       callback: (map) {
         if (map == null) {
           return null;
         }
-        return EMMessage.fromJson(map);
+        return ChatMessage.fromJson(map);
       },
     ),
     ext: map.getValue(&#39;ext&#39;, callback: (ext) =&gt; ext as String?),
@@ -107,7 +107,7 @@
 <footer>
   <span class="no-break">
     im_flutter_sdk
-      4.19.0
+      4.22.0
   </span>
   
 </footer>

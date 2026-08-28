@@ -61,7 +61,7 @@
     <h2>Constructors</h2>
     <dl class="constructor-summary-list">
         <dt id="RecallMessageInfo.new" class="callable">
-          <span class="name"><a href="../im_flutter_sdk/RecallMessageInfo/RecallMessageInfo.html">RecallMessageInfo.new</a></span><span class="signature">({<span class="parameter" id="-param-recallBy"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">recallBy</span>, </span><span class="parameter" id="-param-recallMessageId"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">recallMessageId</span>, </span><span class="parameter" id="-param-recallMessage"><span class="type-annotation"><a href="../im_flutter_sdk/EMMessage-class.html">EMMessage</a>?</span> <span class="parameter-name">recallMessage</span>, </span><span class="parameter" id="-param-conversationId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">conversationId</span>, </span><span class="parameter" id="-param-ext"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">ext</span></span>})</span>
+          <span class="name"><a href="../im_flutter_sdk/RecallMessageInfo/RecallMessageInfo.html">RecallMessageInfo</a></span><span class="signature">({<span class="parameter" id="-param-recallBy"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">recallBy</span>, </span><span class="parameter" id="-param-recallMessageId"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">recallMessageId</span>, </span><span class="parameter" id="-param-recallMessage"><span class="type-annotation"><a href="../im_flutter_sdk/ChatMessage-class.html">ChatMessage</a>?</span> <span class="parameter-name">recallMessage</span>, </span><span class="parameter" id="-param-conversationId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">conversationId</span>, </span><span class="parameter" id="-param-ext"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">ext</span></span>})</span>
         </dt>
         <dd>
           
@@ -89,9 +89,7 @@
 
 </dt>
 <dd>
-  ~english
-The conversation ID of the recalled message.
-~end
+  撤回消息的会话ID。
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -103,12 +101,7 @@ The conversation ID of the recalled message.
 
 </dt>
 <dd>
-  ~english
-The extension field of the recalled message.
-~end
-~chinese
-撤回消息时要透传的信息。
-~end
+  撤回消息时要透传的信息。
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -132,25 +125,19 @@ The extension field of the recalled message.
 
 </dt>
 <dd>
-  ~english
-The user who recalled the message.
-~end
-~chinese
-撤回消息的用户。
-~end
+  撤回消息的用户。
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
 
         <dt id="recallMessage" class="property">
   <span class="name"><a href="../im_flutter_sdk/RecallMessageInfo/recallMessage.html">recallMessage</a></span>
-  <span class="signature">&#8594; <a href="../im_flutter_sdk/EMMessage-class.html">EMMessage</a>?</span>
+  <span class="signature">&#8594; <a href="../im_flutter_sdk/ChatMessage-class.html">ChatMessage</a>?</span>
   
 
 </dt>
 <dd>
-  ~english
-The recalled message.
+  撤回的消息，离线撤回会为空。
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -162,12 +149,7 @@ The recalled message.
 
 </dt>
 <dd>
-  ~english
-The ID of the recalled message.
-~end
-~chinese
-撤回消息的id
-~end
+  撤回消息的id
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -269,7 +251,7 @@ The ID of the recalled message.
 <footer>
   <span class="no-break">
     im_flutter_sdk
-      4.19.0
+      4.22.0
   </span>
   
 </footer>

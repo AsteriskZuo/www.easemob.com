@@ -55,27 +55,20 @@
     
       <section class="multi-line-signature">
         
-        void Function<span class="signature">(<span class="parameter" id="param-msgId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">msgId</span>, </span><span class="parameter" id="param-msg"><span class="type-annotation"><a href="../../im_flutter_sdk/EMMessage-class.html">EMMessage</a></span> <span class="parameter-name">msg</span></span>)</span>?
+        void Function<span class="signature">(<span class="parameter" id="param-msgId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">msgId</span>, </span><span class="parameter" id="param-msg"><span class="type-annotation"><a href="../../im_flutter_sdk/ChatMessage-class.html">ChatMessage</a></span> <span class="parameter-name">msg</span></span>)</span>?
         <span class="name ">onSuccess</span>
         <div class="features"><span class="feature">final</span></div>
 
       </section>
       
 <section class="desc markdown">
-  <p>~english
-Occurs when a message is successfully sent or downloaded.</p>
-<p>Param <code>msgId</code> The pre-sending message ID or the ID of the message that is successfully downloaded.</p>
-<p>Param <code>msg</code> The message that is successfully sent or downloaded.
-~end</p>
-<p>~chinese
-消息发送或下载成功回调。
-~end</p>
+  <p>消息发送或下载成功回调。</p>
 </section>
 
       
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">final void Function(String msgId, EMMessage msg)? onSuccess;</code></pre>
+  <pre class="language-dart"><code class="language-dart">final void Function(String msgId, ChatMessage msg)? onSuccess;</code></pre>
 </section>
 
 
@@ -104,7 +97,7 @@ Occurs when a message is successfully sent or downloaded.</p>
 <footer>
   <span class="no-break">
     im_flutter_sdk
-      4.19.0
+      4.22.0
   </span>
   
 </footer>

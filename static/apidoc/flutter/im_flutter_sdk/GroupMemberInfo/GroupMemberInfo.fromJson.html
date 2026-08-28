@@ -66,7 +66,10 @@
   <pre class="language-dart"><code class="language-dart">GroupMemberInfo.fromJson(Map&lt;String, dynamic&gt; map)
     : userId = map[&quot;userId&quot;],
       joinedTs = map[&quot;joinedTs&quot;],
-      role = EMGroupPermissionTypeExtension.values(map[&quot;role&quot;]);</code></pre>
+      role = ChatGroupPermissionTypeExtension.values(map[&quot;role&quot;]),
+      namecard = map[&quot;namecard&quot;],
+      nickname = map[&quot;nickname&quot;],
+      avatarUrl = map[&quot;avatarUrl&quot;];</code></pre>
 </section>
 
 
@@ -94,7 +97,7 @@
 <footer>
   <span class="no-break">
     im_flutter_sdk
-      4.19.0
+      4.22.0
   </span>
   
 </footer>
