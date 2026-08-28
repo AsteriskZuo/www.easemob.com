@@ -54,12 +54,7 @@
 
     
 <section class="desc markdown">
-  <p>~english
-The group member info class, which contains the group member information.
-~end</p>
-<p>~chinese
-群成员信息类，包含群成员信息。
-~end</p>
+  <p>群成员信息类，包含群成员信息。</p>
 </section>
 
 
@@ -69,12 +64,10 @@ The group member info class, which contains the group member information.
     <h2>Constructors</h2>
     <dl class="constructor-summary-list">
         <dt id="GroupMemberInfo.new" class="callable">
-          <span class="name"><a href="../im_flutter_sdk/GroupMemberInfo/GroupMemberInfo.html">GroupMemberInfo.new</a></span><span class="signature">(<span class="parameter" id="-param-userId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">userId</span>, </span><span class="parameter" id="-param-joinedTs"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">joinedTs</span>, </span><span class="parameter" id="-param-role"><span class="type-annotation"><a href="../im_flutter_sdk/EMGroupPermissionType.html">EMGroupPermissionType</a></span> <span class="parameter-name">role</span></span>)</span>
+          <span class="name"><a href="../im_flutter_sdk/GroupMemberInfo/GroupMemberInfo.html">GroupMemberInfo</a></span><span class="signature">(<span class="parameter" id="-param-userId"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">userId</span>, </span><span class="parameter" id="-param-joinedTs"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">joinedTs</span>, </span><span class="parameter" id="-param-role"><span class="type-annotation"><a href="../im_flutter_sdk/ChatGroupPermissionType.html">ChatGroupPermissionType</a></span> <span class="parameter-name">role</span>, {</span><span class="parameter" id="-param-namecard"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">namecard</span>, </span><span class="parameter" id="-param-nickname"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">nickname</span>, </span><span class="parameter" id="-param-avatarUrl"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">avatarUrl</span></span>})</span>
         </dt>
         <dd>
-          ~english
-Creates a group member info.
-~end
+          创建群成员信息。
         </dd>
         <dt id="GroupMemberInfo.fromJson" class="callable">
           <span class="name"><a href="../im_flutter_sdk/GroupMemberInfo/GroupMemberInfo.fromJson.html">GroupMemberInfo.fromJson</a></span><span class="signature">(<span class="parameter" id="fromJson-param-map"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">map</span></span>)</span>
@@ -90,6 +83,18 @@ Creates a group member info.
       id="instance-properties">
     <h2>Properties</h2>
     <dl class="properties">
+        <dt id="avatarUrl" class="property">
+  <span class="name"><a href="../im_flutter_sdk/GroupMemberInfo/avatarUrl.html">avatarUrl</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span>
+  
+
+</dt>
+<dd>
+  群成员的头像。
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
         <dt id="hashCode" class="property inherited">
   <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
   <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
@@ -109,23 +114,43 @@ Creates a group member info.
 
 </dt>
 <dd>
-  ~english
-The timestamp when the user joined the group.
-~end
+  用户加入群组的时间戳。
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="namecard" class="property">
+  <span class="name"><a href="../im_flutter_sdk/GroupMemberInfo/namecard.html">namecard</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span>
+  
+
+</dt>
+<dd>
+  群成员的群名片。
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="nickname" class="property">
+  <span class="name"><a href="../im_flutter_sdk/GroupMemberInfo/nickname.html">nickname</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span>
+  
+
+</dt>
+<dd>
+  群成员的昵称。
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
 
         <dt id="role" class="property">
   <span class="name"><a href="../im_flutter_sdk/GroupMemberInfo/role.html">role</a></span>
-  <span class="signature">&#8594; <a href="../im_flutter_sdk/EMGroupPermissionType.html">EMGroupPermissionType</a></span>
+  <span class="signature">&#8594; <a href="../im_flutter_sdk/ChatGroupPermissionType.html">ChatGroupPermissionType</a></span>
   
 
 </dt>
 <dd>
-  ~english
-The role of the group member.
-~end
+  群成员角色。
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -149,9 +174,7 @@ The role of the group member.
 
 </dt>
 <dd>
-  ~english
-The user ID of the group member.
-~end
+  群成员用户 ID。
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -241,7 +264,7 @@ The user ID of the group member.
 <footer>
   <span class="no-break">
     im_flutter_sdk
-      4.19.0
+      4.22.0
   </span>
   
 </footer>

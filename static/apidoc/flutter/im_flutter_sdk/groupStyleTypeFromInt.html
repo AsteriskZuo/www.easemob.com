@@ -54,7 +54,7 @@
 
     <section class="multi-line-signature">
         
-<span class="returntype"><a href="../im_flutter_sdk/EMGroupStyle.html">EMGroupStyle</a></span>
+<span class="returntype"><a href="../im_flutter_sdk/ChatGroupStyle.html">ChatGroupStyle</a></span>
 <span class="name ">groupStyleTypeFromInt</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="groupStyleTypeFromInt-param-type"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">type</span></span></li>
 </ol>)
 
@@ -67,27 +67,27 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">EMGroupStyle groupStyleTypeFromInt(int? type) {
-  EMGroupStyle ret = EMGroupStyle.PrivateOnlyOwnerInvite;
+  <pre class="language-dart"><code class="language-dart">ChatGroupStyle groupStyleTypeFromInt(int? type) {
+  ChatGroupStyle ret = ChatGroupStyle.PrivateOnlyOwnerInvite;
   switch (type) {
     case 0:
       {
-        ret = EMGroupStyle.PrivateOnlyOwnerInvite;
+        ret = ChatGroupStyle.PrivateOnlyOwnerInvite;
       }
       break;
     case 1:
       {
-        ret = EMGroupStyle.PrivateMemberCanInvite;
+        ret = ChatGroupStyle.PrivateMemberCanInvite;
       }
       break;
     case 2:
       {
-        ret = EMGroupStyle.PublicJoinNeedApproval;
+        ret = ChatGroupStyle.PublicJoinNeedApproval;
       }
       break;
     case 3:
       {
-        ret = EMGroupStyle.PublicOpenJoin;
+        ret = ChatGroupStyle.PublicOpenJoin;
       }
       break;
   }
@@ -119,7 +119,7 @@
 <footer>
   <span class="no-break">
     im_flutter_sdk
-      4.19.0
+      4.22.0
   </span>
   
 </footer>
